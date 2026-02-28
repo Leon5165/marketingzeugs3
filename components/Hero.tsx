@@ -174,7 +174,7 @@ const Hero: React.FC = () => {
         <p 
           className={`text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         >
-          Mit unserem System sorgen wir von 90 Tagen für Fachkräfte, die Ihre Lieferfähigkeit sichern, Qualität stabil halten und Wissen im Betrieb bewahren.
+          Mit unserem System sorgen wir in 90 Tagen für Fachkräfte, die Ihre Lieferfähigkeit sichern, Qualität stabil halten und Wissen im Betrieb bewahren.
         </p>
 
         {/* Buttons - Mobile: Stacked, Desktop: Row */}

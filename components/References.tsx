@@ -53,18 +53,6 @@ const References: React.FC = () => {
       color: "bg-orange-500"
     },
     {
-      company: "Gemmer",
-      industry: "Handwerk & Fertigung",
-      title: "Unbesetzte Stellen.\nProduktion auf Hochtour.\nKrankheitsausfälle.",
-      description: "Durch eine regionale Recruiting-Kampagne kombiniert mit gezielter Suche im EU-Raum haben wir qualifizierte Metallbauer und Schweißer gewonnen. Nun ist die Qualität und die Planbarkeit gesichert.",
-      results: [
-        { label: "Qualifizierte Einstellung", value: "3" },
-        { label: "Tage bis alle Stellen besetzt waren", value: "20" }
-      ],
-      image: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/mY0rZM.webp",
-      color: "bg-blue-600"
-    },
-    {
       company: "Hansebahn Bremen",
       industry: "Transport & Logistik",
       title: "Stellen bleiben lange unbesetzt.\nHohe Kosten durch Einsatz von Leiharbeit.\nKaum Auszubildende.",
@@ -76,6 +64,19 @@ const References: React.FC = () => {
       ],
       image: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/wgXOz8.webp",
       color: "bg-blue-400"
+    },
+    {
+      company: "Gemmer",
+      industry: "Handwerk & Fertigung",
+      title: "Unbesetzte Stellen.\nProduktion auf Hochtour.\nKrankheitsausfälle.",
+      description: "Durch eine regionale Recruiting-Kampagne kombiniert mit gezielter Suche im EU-Raum haben wir qualifizierte Metallbauer und Schweißer gewonnen. Nun ist die Qualität und die Planbarkeit gesichert.",
+      results: [
+        { label: "Qualifizierte Einstellung", value: "3" },
+        { label: "Tage bis alle Stellen besetzt waren", value: "20" },
+        { label: "Steigerung der Produktivität", value: "15%" }
+      ],
+      image: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/mY0rZM.webp",
+      color: "bg-blue-600"
     },
     {
       company: "Gilbert & Schmalriede",
