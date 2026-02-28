@@ -55,49 +55,49 @@ const History: React.FC = () => {
       title: "Einstieg & Praxis.",
       description: "Einstieg bei einem Personaldienstleister und direkt rein in die Praxis: Recruiting und Marketing für technisch gewerbliche Profile. Nicht als „Kampagne“, sondern als tägliche Verantwortung. Ziel war immer klar: passende Leute finden, die schnell starten können und im Betrieb funktionieren. Einsatzgebiet: Nord- und Ostdeutschland, später auch Recruiting im EU-Ausland.",
       icon: <Briefcase size={32} strokeWidth={1.5} />,
-      img: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/wApIIJ.webp"
+      img: "https://antiquewhite-kingfisher-530774.hostingersite.com/2018.webp"
     },
     {
       id: "2019",
       title: "Die Realität der Betriebe.",
       description: "Der Alltag wird zur Realität vieler Betriebe: zu wenig gute Bewerber, zu viel Streuverlust, zu viele Gespräche ohne Treffer. Parallel steigt der Druck bei Kunden: Maschinen dürfen nicht stehen, Termine dürfen nicht rutschen, Qualität muss stimmen. In dieser Phase beginnt die systematische Arbeit: Was zieht die richtigen Kandidaten an und was sorgt dafür, dass sie am Ende wirklich anfangen?",
       icon: <Search size={32} strokeWidth={1.5} />,
-      img: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/tCLHhM.webp"
+      img: "https://antiquewhite-kingfisher-530774.hostingersite.com/2019.webp"
     },
     {
       id: "2020",
       title: "Candidate Journey Fokus.",
       description: "Vom „Wir suchen Leute“ hin zu einer klaren Candidate Journey. Prozesse werden straffer, Kommunikation schneller, Auswahl besser. Fokus: weniger Masse, mehr Passung. Denn die eigentliche Herausforderung ist nicht, Bewerbungen zu bekommen, sondern Abbrüche zu vermeiden und die richtigen Menschen sauber durch den Prozess zu führen.",
       icon: <Route size={32} strokeWidth={1.5} />,
-      img: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/Zq01lL.webp"
+      img: "https://antiquewhite-kingfisher-530774.hostingersite.com/2020.webp"
     },
     {
       id: "2021",
       title: "Skalierung & System.",
       description: "Skalierung und Qualitätsanspruch gleichzeitig. Recruiting wird nicht als Einzelmaßnahme gedacht, sondern als wiederholbares System: Zielgruppenlogik, Vorqualifizierung, Erwartungsmanagement, Tempo im Prozess, saubere Übergaben. Ergebnis zählt, nicht der schöne Report.",
       icon: <TrendingUp size={32} strokeWidth={1.5} />,
-      img: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/I7LRzM.webp"
+      img: "https://antiquewhite-kingfisher-530774.hostingersite.com/2021.webp"
     },
     {
       id: "2022",
       title: "Das fertige System.",
       description: "Das System ist im Kern fertig, weil es unter Druck entstanden ist. Nicht im Workshop, sondern im Alltag mit echten Engpässen. Die Erkenntnis sitzt: Im Mittelstand geht es nicht nur um Personal. Es geht um Lieferfähigkeit, Qualität, Wissen im Betrieb und darum, dass der Laden läuft, ohne dass der Unternehmer ständig Feuer löscht.",
       icon: <Settings size={32} strokeWidth={1.5} />,
-      img: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/sp76wc.webp"
+      img: "https://antiquewhite-kingfisher-530774.hostingersite.com/2022.webp"
     },
     {
       id: "2023",
       title: "Gründung marketingzeugs.",
       description: "Gründung von marketingzeugs. Ziel: dieses System in den inhabergeführten Mittelstand bringen. Dorthin, wo Personalmangel schnell existenzbedrohend wird, weil Know-how verschwindet, Schichten nicht besetzt sind, Termine kippen und Kunden abspringen. Recruiting sollte planbar werden, ohne „Hoffen und Beten“.",
       icon: <Rocket size={32} strokeWidth={1.5} />,
-      img: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/VUtZAX.webp"
+      img: "https://antiquewhite-kingfisher-530774.hostingersite.com/2023.webp"
     },
     {
       id: "Heute",
       title: "Langfristige Begleitung.",
       description: "Wir begleiten mittelständische Betriebe langfristig und bauen Strukturen, die dauerhaft funktionieren. Viele Kunden arbeiten über Jahre mit uns zusammen, weil sie nicht nur kurzfristig Stellen besetzen wollen, sondern sich für die Zukunft fit machen wollen:\n\n• Wissen im Unternehmen sichern, bevor es mit in den Ruhestand geht\n• Qualität erhöhen, weil die richtigen Leute am richtigen Platz sind\n• zuverlässiger liefern, weil Teams stabil werden und Prozesse greifen\n\nDas schaffen wir mit unserem eigens für den Mittelstand entwickelten System: kein Marketing-Trick, sondern eine praxiserprobte Methode, die Recruiting, Candidate Journey und interne Abläufe so verbindet, dass am Ende nicht „irgendwer“ kommt, sondern die richtigen Menschen bleiben.",
       icon: <Users size={32} strokeWidth={1.5} />,
-      img: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/6CY3ew.webp"
+      img: "https://antiquewhite-kingfisher-530774.hostingersite.com/heute.webp"
     }
   ];
 
@@ -107,7 +107,7 @@ const History: React.FC = () => {
       {/* Background Image for Top Section */}
       <div className="absolute top-0 left-0 w-full h-[600px] pointer-events-none z-0">
         <img 
-          src="https://dulcet-cobbler-58eec0.netlify.app/Stephan%20Bu%CC%88hnenbild.webp" 
+          src="https://antiquewhite-kingfisher-530774.hostingersite.com/Stephan%20Bühnenbild.webp" 
           alt="Background" 
           className="w-full h-full object-cover opacity-40"
         />

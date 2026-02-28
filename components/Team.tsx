@@ -29,7 +29,7 @@ const Team: React.FC = () => {
       name: 'Stephan', 
       lastName: 'Müller',
       role: 'CEO & Founder', 
-      img: 'https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/rbERcI.jpg' 
+      img: 'https://antiquewhite-kingfisher-530774.hostingersite.com/Stephan_01.webp' 
     },
     { 
       name: 'Charlene', 

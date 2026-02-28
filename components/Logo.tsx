@@ -10,7 +10,7 @@ const Logo: React.FC<{ className?: string; light?: boolean; variant?: 'text' | '
     return (
       <div className={`relative flex items-center select-none w-fit ${className}`}>
         <img 
-          src="https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/2OVfuE.png" 
+          src="https://antiquewhite-kingfisher-530774.hostingersite.com/logo-withoutbg.webp" 
           alt="marketingzeugs logo" 
           className={`h-12 md:h-16 w-auto object-contain ${light ? 'brightness-0 invert' : ''}`}
           referrerPolicy="no-referrer"

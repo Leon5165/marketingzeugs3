@@ -43,7 +43,7 @@ const Testimonials: React.FC = () => {
             style={{ transform: `translateX(-50%) translateY(${offset * 0.6}px)` }}
           >
             <img 
-              src="https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/k5nM17.png" 
+              src="https://antiquewhite-kingfisher-530774.hostingersite.com/iphonemockup.webp" 
               alt="iPhone Mockup" 
               className="w-full h-auto"
             />

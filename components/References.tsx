@@ -49,7 +49,7 @@ const References: React.FC = () => {
         { label: "neue LKW's", value: "50+" },
         { label: "Wachstumskurs", value: "100%" }
       ],
-      image: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/iHIlKs.webp",
+      image: "https://antiquewhite-kingfisher-530774.hostingersite.com/sglogistics-ref.webp",
       color: "bg-orange-500"
     },
     {
@@ -62,7 +62,7 @@ const References: React.FC = () => {
         { label: "Ausbildungen pro Jahr", value: "30+" },
         { label: "Zukunftssicherung", value: "100%" }
       ],
-      image: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/wgXOz8.webp",
+      image: "https://antiquewhite-kingfisher-530774.hostingersite.com/hbb-ref.webp",
       color: "bg-blue-400"
     },
     {
@@ -75,7 +75,7 @@ const References: React.FC = () => {
         { label: "Tage bis alle Stellen besetzt waren", value: "20" },
         { label: "Steigerung der Produktivität", value: "15%" }
       ],
-      image: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/mY0rZM.webp",
+      image: "https://antiquewhite-kingfisher-530774.hostingersite.com/gemmer-ref.webp",
       color: "bg-blue-600"
     },
     {
@@ -88,7 +88,7 @@ const References: React.FC = () => {
         { label: "weniger Reklamationen", value: "20%" },
         { label: "Steigerung der Produktivität", value: "15%" }
       ],
-      image: "https://images.guns.lol/c5ef1716cc448792373e254f7855895411393353/U3EVI1.webp",
+      image: "https://antiquewhite-kingfisher-530774.hostingersite.com/gilbert-schmalriede-ref.webp",
       color: "bg-emerald-600"
     }
   ];
