@@ -9,6 +9,7 @@ import Comparison from './components/Comparison';
 import Team from './components/Team';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         <Testimonials />
         <FAQ />
         <Team />
+        <Contact />
       </main>
       <Footer />
     </div>
