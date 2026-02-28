@@ -1,34 +1,25 @@
 
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Ticker from './components/Ticker';
-import History from './components/History';
-import References from './components/References';
-import Comparison from './components/Comparison';
-import Team from './components/Team';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
+import AGB from './pages/AGB';
+import CookieConsent from './components/CookieConsent';
 
 const App: React.FC = () => {
   return (
-    <div className="relative min-h-screen bg-white">
-      <Header />
-      <main>
-        <Hero />
-        <Ticker />
-        <References />
-        <History />
-        <Comparison />
-        <Testimonials />
-        <FAQ />
-        <Team />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="relative min-h-screen bg-white">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
+          <Route path="/agb" element={<AGB />} />
+        </Routes>
+        <CookieConsent />
+      </div>
+    </Router>
   );
 };
 

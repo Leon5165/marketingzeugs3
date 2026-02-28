@@ -1,5 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Logo from './Logo';
 
 const Footer: React.FC = () => {
@@ -30,7 +32,9 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
             <div className="mb-8 pl-2">
-               <Logo className="scale-[0.8] origin-left" light={true} variant="image" />
+               <Link to="/">
+                 <Logo className="scale-[0.8] origin-left" light={true} variant="image" />
+               </Link>
             </div>
             <p className="text-gray-400 max-w-sm mb-8 leading-relaxed font-medium">
               Führende Social Media Agentur für ganzheitliches Marketing, Recruiting und Employer Branding im Mittelstand.
@@ -40,19 +44,27 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-white mb-6 uppercase tracking-widest text-xs">Navigation</h4>
             <ul className="space-y-4 text-gray-400 font-semibold">
-              <li><a href="#" className="hover:text-[#22c55e] transition-colors">Startseite</a></li>
-              <li><a href="#services" className="hover:text-[#22c55e] transition-colors">Leistungen</a></li>
-              <li><a href="#team" className="hover:text-[#22c55e] transition-colors">Unser Team</a></li>
-              <li><a href="#contact" className="hover:text-[#22c55e] transition-colors">Kontakt</a></li>
+              <li><Link to="/" className="hover:text-[#22c55e] transition-colors">Startseite</Link></li>
+              <li><HashLink smooth to="/#services" className="hover:text-[#22c55e] transition-colors">Leistungen</HashLink></li>
+              <li><HashLink smooth to="/#team" className="hover:text-[#22c55e] transition-colors">Unser Team</HashLink></li>
+              <li><HashLink smooth to="/#contact" className="hover:text-[#22c55e] transition-colors">Kontakt</HashLink></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-bold text-white mb-6 uppercase tracking-widest text-xs">Rechtliches</h4>
             <ul className="space-y-4 text-gray-400 font-semibold">
-              <li><a href="#" className="hover:text-[#22c55e] transition-colors">Datenschutz</a></li>
-              <li><a href="#" className="hover:text-[#22c55e] transition-colors">Impressum</a></li>
-              <li><a href="#" className="hover:text-[#22c55e] transition-colors">AGB</a></li>
+              <li><Link to="/datenschutz" className="hover:text-[#22c55e] transition-colors">Datenschutz</Link></li>
+              <li><Link to="/impressum" className="hover:text-[#22c55e] transition-colors">Impressum</Link></li>
+              <li><Link to="/agb" className="hover:text-[#22c55e] transition-colors">AGB</Link></li>
+              <li>
+                <button 
+                  onClick={() => window.dispatchEvent(new Event('show-cookie-settings'))}
+                  className="hover:text-[#22c55e] transition-colors cursor-pointer"
+                >
+                  Cookie-Einstellungen
+                </button>
+              </li>
             </ul>
           </div>
         </div>

@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Logo from './Logo';
 
 const Header: React.FC = () => {
@@ -10,18 +12,21 @@ const Header: React.FC = () => {
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = 'hidden';
+      document.body.classList.add('menu-open');
     } else {
       document.body.style.overflow = 'unset';
+      document.body.classList.remove('menu-open');
     }
     return () => {
       document.body.style.overflow = 'unset';
+      document.body.classList.remove('menu-open');
     };
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { name: 'Leistungen', href: '#services' },
-    { name: 'Team', href: '#team' },
-    { name: 'Kontakt', href: '#contact' },
+    { name: 'Leistungen', href: '/#services' },
+    { name: 'Team', href: '/#team' },
+    { name: 'Kontakt', href: '/#contact' },
   ];
 
   return (
@@ -30,25 +35,28 @@ const Header: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 relative z-50">
-            <Logo className="scale-[0.7] md:scale-[0.85]" />
+            <Link to="/">
+              <Logo className="scale-[0.7] md:scale-[0.85]" />
+            </Link>
           </div>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             <div className="flex items-center gap-8 mr-4">
               {navLinks.map((link) => (
-                <a 
+                <HashLink 
                   key={link.name}
-                  href={link.href} 
+                  smooth
+                  to={link.href} 
                   className="text-sm font-bold text-gray-600 hover:text-[#22c55e] transition-colors tracking-tight"
                 >
                   {link.name}
-                </a>
+                </HashLink>
               ))}
             </div>
-            <button className="px-6 py-3 border border-gray-900 rounded-full text-xs font-bold tracking-tight hover:bg-gray-900 hover:text-white transition-all bg-transparent text-gray-900">
+            <HashLink smooth to="/#contact" className="px-6 py-3 border border-gray-900 rounded-full text-xs font-bold tracking-tight hover:bg-gray-900 hover:text-white transition-all bg-transparent text-gray-900">
               Jetzt kostenlos Termin vereinbaren
-            </button>
+            </HashLink>
           </div>
 
           {/* Mobile Toggle */}
@@ -79,9 +87,10 @@ const Header: React.FC = () => {
           {/* Navigation Links */}
           <div className="flex-1 flex flex-col justify-center items-center space-y-6 relative z-10">
             {navLinks.map((link, index) => (
-               <a 
+               <HashLink 
                  key={link.name}
-                 href={link.href} 
+                 smooth
+                 to={link.href} 
                  className={`text-4xl sm:text-5xl font-black text-gray-900 hover:text-[#22c55e] transition-all duration-300 transform ${
                    mobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                  }`}
@@ -89,7 +98,7 @@ const Header: React.FC = () => {
                  onClick={() => setMobileMenuOpen(false)}
                >
                  {link.name}
-               </a>
+               </HashLink>
             ))}
           </div>
 

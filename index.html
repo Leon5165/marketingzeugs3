@@ -73,6 +73,11 @@
         .animate-electric-pulse {
             animation: electric-pulse 2s infinite;
         }
+        
+        /* Hide Elfsight widgets when mobile menu is open */
+        body.menu-open [class*="elfsight-app-"] {
+            display: none !important;
+        }
     </style>
 <script type="importmap">
 {
@@ -84,7 +89,15 @@
   }
 }
 </script>
-    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <script>
+      // GDPR: Load Elfsight only if consent is given
+      if (localStorage.getItem('cookie-consent') === 'accepted') {
+        const script = document.createElement('script');
+        script.src = "https://elfsightcdn.com/platform.js";
+        script.async = true;
+        document.head.appendChild(script);
+      }
+    </script>
 </head>
 <body class="selection:bg-green-100 selection:text-green-900 overflow-x-hidden">
     <div id="root"></div>
