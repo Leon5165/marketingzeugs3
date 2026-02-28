@@ -107,7 +107,7 @@ const History: React.FC = () => {
       {/* Background Image for Top Section */}
       <div className="absolute top-0 left-0 w-full h-[600px] pointer-events-none z-0">
         <img 
-          src="https://antiquewhite-kingfisher-530774.hostingersite.com/Stephan%20Bühnenbild.webp" 
+          src="https://antiquewhite-kingfisher-530774.hostingersite.com/Stephan%20Bu%CC%88hnenbild.webp" 
           alt="Background" 
           className="w-full h-full object-cover opacity-40"
         />
